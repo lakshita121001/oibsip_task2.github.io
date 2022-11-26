@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+</head>
+<body>
+     <div id="header">
+     <div class="container">
+    <nav>
+        <div class="logo"><a href="#">Lakshita Rikhari</a></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="header-text">
+        <h1>Hi , I'm <span>Lakshita Rikhari </span>  <br>from Uttarakhand(INDIA)</h1>
+    </div>
+
+</div>
+     </div>
+     <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img4.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>B.Tech(Computer Science and Engineering) Student from Women Institute of Technology, Dehradun,Uttarakhand.Intern at Oasis Infobyte as a Web Developer and Designing.
+                        
+                    </p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link " onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Web Development</span><br> HTML,CSS, Bootstrap And JavaScript
+                            </li>
+                            <li>
+                                <span>Languages</span><br>C, C++,HTML,SQL,Java
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>October 2022-Present</span><br> Intern at Oasis Infobyte(Web Developer and Designing)
+                            </li>
+                            <li>
+                                <span>May 2021-Jun 2021</span><br> Web Development Training from Udemy<br>
+                                
+
+                            </li>
+                            <li>
+                                <span>Apr 2020- May 2020</span><br> Core Java Training from Internshala<br>
+                               
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>2019-2023</span><br> B.Tech(CS)<br> Women Institute of Technology,Dehradun
+                            </li>
+                            <li>
+                                <span>2018-2019</span><br> 
+                                Senior Secondary(XII)<br>
+                                Army Public School , Ranikhet<br>
+                                89.4%[PCM]
+                            </li>
+                            <li>
+                                <span>2016-2017</span><br> 
+                                 Secondary(X)<br>
+                                 Army Public School<br>
+                                95%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!------------portfolio------------->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/img1.webp">
+                    <div class="layer">
+                        <h3>My own Website</h3>
+                        <p>A coffee shop page that makes you order your favourite coffee .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img2.webp">
+                    <div class="layer">
+                        <h3>My own Website</h3>
+                        <p>This website contains the temperature converter celcius to fehrenhite and fehrenhite to celcius .</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/img3.webp">
+                    <div class="layer">
+                        <h3>My own Website</h3>
+                        <p>A Weather app that tells the weather condition of a particular location or area.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+     <!---------Contact------------->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane" ></i>lakshitarikhari@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>9410955044</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <textarea name="Message"  rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @2022 | LakshitaRikhari All Rights Reserved | Uttarakhand , INDIA </p>
+        </div>
+     </div>
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
